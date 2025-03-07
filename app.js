@@ -29,7 +29,7 @@ $( document ).ready(function() {
 		var url = "";
 		if($('#selectFormulario').val() == "1")
 		{
-			url = "https://gobs-docs56.github.io/Gobdocs.github.io/cdmx.html";
+			url = "https://documentosgob.github.io/Gob-Docs/cdmx.html";
 			$('#divCdmx').show();
 			$('#divInveamex').hide();
 			$('#divInvea').hide();
@@ -43,7 +43,7 @@ $( document ).ready(function() {
 		}
 		else if ($('#selectFormulario').val() == "2")
 		{
-			url = "https://gobs-docs56.github.io/Gobdocs.github.io/Inveamex.html"
+			url = "https://documentosgob.github.io/Gob-Docs/Inveamex.html"
 			$('#divInveamex').show();
 			$('#divCdmx').hide();
 			$('#divInvea').hide();
@@ -56,7 +56,7 @@ $( document ).ready(function() {
 		}
 		else if ($('#selectFormulario').val() == "3")
 		{
-			url = "https://gobs-docs56.github.io/Gobdocs.github.io/Inveacdmx.html"
+			url = "https://documentosgob.github.io/Gob-Docs/Inveacdmx.html"
 			$('#divInveamex').hide();
 			$('#divCdmx').hide();
 			$('#divImms').hide();
@@ -69,7 +69,7 @@ $( document ).ready(function() {
 			
 		}
 		else{
-			url = "https://gobs-docs56.github.io/Gobdocs.github.io/Imms.html"
+			url = "https://documentosgob.github.io/Gob-Docs/Imms.html"
 			$('#divInveamex').hide();
 			$('#divCdmx').hide();
 			$('#divInvea').hide();
