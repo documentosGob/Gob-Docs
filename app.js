@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
 	$( "#btnQRInvea" ).on( "click", function() {
 		const urlPage = formulario.Invcdmxlink.value +"?Params=";
-		var Parametros = formulario.InvcdmxAsunto.value +formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value ;
+		var Parametros = formulario.InvcdmxAsunto.value +"|" +formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value ;
 		var str = Parametros.replace(/\s+/g, '!').toUpperCase();
 		const urlPagina = urlPage+str
 		console.log(urlPagina);
