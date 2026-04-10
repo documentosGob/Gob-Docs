@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
 	$( "#btnQRInvea" ).on( "click", function() {
 		const urlPage = formulario.Invcdmxlink.value +"?Params=";
-		var Parametros = formulario.InvcdmxAsunto.value + "|"+formulario.InvcdmxFecha.value + "|"+formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value + "|"+formulario.InvcdmxHora.value + "|"+formulario.InvcdmxDudas.value ;
+		var Parametros = formulario.InvcdmxAsunto.value +formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value ;
 		var str = Parametros.replace(/\s+/g, '!').toUpperCase();
 		const urlPagina = urlPage+str
 		console.log(urlPagina);
@@ -188,12 +188,9 @@ function ClearCampos(){
 	$('#InvrRazonSoc').val('');
 	$('#InvDireccion').val('');
 	$('#InvcdmxAsunto').val('');
-	$('#InvcdmxFecha').val('');
 	$('#InvcdmxVerificador').val('');
 	$('#InvcdmxAsignacion').val('');
 	$('#InvcdmxFolio').val('');
-	$('#InvcdmxHora').val('');
-	$('#InvcdmxDudas').val('');
 }
 
 function UsuarioInvalido(){
