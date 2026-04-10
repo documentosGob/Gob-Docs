@@ -99,7 +99,7 @@ $( document ).ready(function() {
 	});
 	 $( "#btnQRInveamex" ).on( "click", function() {
 		const urlPage = formulario.Invlink.value +"?Params=";
-		var Parametros = formulario.InvAsunto.value + "|"+formulario.InvFolio.value + "|"+formulario.InvFechaNot.value + "|"+formulario.InvFechavis.value + "|"+formulario.InvHoravis.value + "|"+formulario.InvVerificador.value + "|"+formulario.InvrRazonSoc.value+ "|"+formulario.InvDireccion.value;
+		var Parametros = formulario.InvAsunto.value + "|"+formulario.InvFolio.value + "|"+formulario.InvFechaNot.value +"|"+formulario.InvVerificador.value + "|"+formulario.InvrRazonSoc.value+ "|"+formulario.InvDireccion.value;
 		var str = Parametros.replace(/\s+/g, '!').toUpperCase();
 		const urlPagina = urlPage+str
 		
@@ -184,8 +184,6 @@ function ClearCampos(){
 	$('#InvAsunto').val('');
 	$('#InvFolio').val('');
 	$('#InvFechaNot').val('');
-	$('#InvFechavis').val('');
-	$('#InvHoravis').val('');
 	$('#InvVerificador').val('');
 	$('#InvrRazonSoc').val('');
 	$('#InvDireccion').val('');
