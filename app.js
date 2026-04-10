@@ -99,7 +99,7 @@ $( document ).ready(function() {
 	});
 	 $( "#btnQRInveamex" ).on( "click", function() {
 		const urlPage = formulario.Invlink.value +"?Params=";
-		var Parametros = formulario.InvAsunto.value + "|"+formulario.InvFolio.value + "|"+formulario.InvFechaNot.value +"|"+formulario.InvVerificador.value + "|"+formulario.InvrRazonSoc.value+ "|"+formulario.InvDireccion.value;
+		var Parametros = formulario.InvAsunto.value + "|"+formulario.InvFolio.value + "|"+formulario.InvFechaNot.value + "|"+formulario.InvFechavis.value + "|"+formulario.InvHoravis.value + "|"+formulario.InvVerificador.value + "|"+formulario.InvrRazonSoc.value+ "|"+formulario.InvDireccion.value;
 		var str = Parametros.replace(/\s+/g, '!').toUpperCase();
 		const urlPagina = urlPage+str
 		
@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
 	$( "#btnQRInvea" ).on( "click", function() {
 		const urlPage = formulario.Invcdmxlink.value +"?Params=";
-		var Parametros = formulario.InvcdmxAsunto.value + "|" +formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value ;
+		var Parametros = formulario.InvcdmxAsunto.value + "|"+formulario.InvcdmxFecha.value + "|"+formulario.InvcdmxVerificador.value + "|"+formulario.InvcdmxAsignacion.value + "|"+formulario.InvcdmxFolio.value + "|"+formulario.InvcdmxHora.value + "|"+formulario.InvcdmxDudas.value ;
 		var str = Parametros.replace(/\s+/g, '!').toUpperCase();
 		const urlPagina = urlPage+str
 		console.log(urlPagina);
@@ -184,14 +184,18 @@ function ClearCampos(){
 	$('#InvAsunto').val('');
 	$('#InvFolio').val('');
 	$('#InvFechaNot').val('');
+	$('#InvFechavis').val('');
+	$('#InvHoravis').val('');
 	$('#InvVerificador').val('');
 	$('#InvrRazonSoc').val('');
 	$('#InvDireccion').val('');
 	$('#InvcdmxAsunto').val('');
+	$('#InvcdmxFecha').val('');
 	$('#InvcdmxVerificador').val('');
 	$('#InvcdmxAsignacion').val('');
 	$('#InvcdmxFolio').val('');
-	
+	$('#InvcdmxHora').val('');
+	$('#InvcdmxDudas').val('');
 }
 
 function UsuarioInvalido(){
